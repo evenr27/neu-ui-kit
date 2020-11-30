@@ -1,4 +1,4 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
 
 @Component({
   tag: 'neu-button',
@@ -6,11 +6,12 @@ import { Component, Host, h } from '@stencil/core';
   shadow: true,
 })
 export class NeuButton {
-
   render() {
     return (
       <Host>
-        <slot></slot>
+        <div class="neu-button">
+          <slot></slot>
+        </div>
       </Host>
     );
   }
